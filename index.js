@@ -1,7 +1,6 @@
 const express = require("express");
 const path = require("path")
-const hostname = '127.0.0.1';
-const port = 3000;
+const port = 5000;
 
 const app = express();
 const server = require("http").createServer(app);
@@ -22,8 +21,8 @@ io.on("connection", function (socket) {
     });
 });
 
-server.listen(port, hostname, () => {
-    console.log(`server start on http://${hostname}:${port}/`);
-});
+// server.listen(port, hostname, () => {
+//     console.log(`server start on http://${hostname}:${port}/`);
+// });
 
-// server.listen(5000);
+server.listen(5000);
