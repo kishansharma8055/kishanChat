@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myChat</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+        <div class="screen join_screen active">
+            <div class="from">
+                <h1>welcome kishan sharma chat room</h1>
+                <h2>Join ChatRoom</h2>
+                <div class="form_input">
+                    <label for="">Username</label>
+                    <input type="text" name="" id="username">
+                </div>
+                <div class="form_input">
+                    <button id="join_user">Join</button>
+                </div>
+                <div class="howToJoin">
+                    <button id="btn"><a href="./video.mp4">how to join</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="screen chat_screen ">
+            <div class="header">
+                <div class="logo">ChatRoom</div>
+                <p id="king">kishan sharma</p>
+                <button id="exit_chat">Exit</button>
+            </div>
+            <div class="messages">
+                <!-- dummy message -->
+                <!-- <div class="message my_message">
+                    <div>
+                        <div class="name">You</div>
+                        <div class="name">Hi</div>
+                    </div>
+                </div>
+                <div class="update">
+                    abc is join
+                </div>
+                <div class="message other_message">
+                    <div>
+                        <div class="name">abc</div>
+                        <div class="name">Hi</div>
+                    </div>
+                </div> -->
+            </div>
+            <div class="typebox">
+                <input type="text" name="" id="message_input">
+                <button id="send_message">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="socket.io/socket.io.js"></script>
+    <!-- <script type="text/javascript" src="index.js"></script> -->
+    <script type="text/javascript" src="code.js"></script>
+</body>
+
+</html>
